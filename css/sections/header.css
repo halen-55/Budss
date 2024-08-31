@@ -1,0 +1,16 @@
+/* HEADER */
+
+.header {
+  margin-bottom: 60px;
+}
+
+.header__top {
+  background-color: var(--carrot);
+}
+
+.header__bottom {
+  margin: 11px 60px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}

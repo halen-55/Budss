@@ -1,0 +1,35 @@
+.btn {
+  color: var(--white);
+  font-size: 20px;
+  font-family: "Outfit-SemiBold";
+  background-color: var(--blue-purpl-2);
+  padding: 16px 30px;
+  border-radius: 16px;
+}
+
+.btn--white {
+  color: var(--black);
+  background-color: var(--white);
+  border: 2px solid var(--blue-purpl-2);
+}
+
+.btn--disabled {
+  background-color: var(--light-grey);
+}
+
+.btn:hover {
+  background: #181818;
+}
+
+.btn:focus {
+  background: var(--blue-purpl-2);
+  border: 2px solid var(--light-purp);
+  padding: 14px 28px;
+}
+
+.btn:active {
+  background: var(--purpl);
+  padding: 14px 28px;
+  border: 2px solid var(--purpl);
+}
+

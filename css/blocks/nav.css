@@ -3,7 +3,6 @@
   font-family: "Outfit-Medium";
 }
 
-
 .nav--padding{
   padding-left: 60px;
 }
@@ -22,7 +21,7 @@
 }
 
 .list-link--font-black:visited {
-  color: black;
+  color: var(--black);
 }
 
 .nav-list__link--short {

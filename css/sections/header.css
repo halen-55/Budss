@@ -2,6 +2,7 @@
 
 .header {
   margin-bottom: 60px;
+  height: 100%;
 }
 
 .header__top {
@@ -9,8 +10,16 @@
 }
 
 .header__bottom {
+  max-height: 71px;
   margin: 11px 60px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+}
+
+.sticky {
+  position: sticky;
+  position: -webkit-sticky;
+	top: 0;
+	align-self: flex-start;
 }

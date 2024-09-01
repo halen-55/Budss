@@ -13,30 +13,61 @@
   <header class="header">
     <div class="header__top">
       <div class="container">
-      <nav class="nav nav--padding">
-        <ul class="nav-list">
-          <li class="nav-list__link nav-list__link--black">
-            <a href="#!">For Business</a>
-          </li>
-          <li class="nav-list__link">
-            <a class="list-link list-link--font-black" href="#!">For Customers</a>
-          </li>
-        </ul>
-      </nav>
+        <nav class="nav nav--padding">
+          <ul class="nav-list">
+            <li class="nav-list__link nav-list__link--black">
+              <a href="#!">For Business</a>
+            </li>
+            <li class="nav-list__link">
+              <a class="list-link list-link--font-black" href="#!">For Customers</a>
+            </li>
+          </ul>
+        </nav>
       </div>
     </div>
     <div class="container">
       <div class="header__bottom">
         <a href="#!" class="logo">
-          <img class="logo__img" src="img/logo/logo.svg" alt="Budss">
+          <img class="logo__img sticky" src="img/logo/logo.svg" alt="Budss">
           <p class="logo__text">budss</p>
         </a>
-        <button class="btn btn-none">Contact sales</button>
+        <button class="btn btn--mobile-none">Contact sales</button>
       </div>
+     
+      <!-- BURGER -->
+    <div class="burger-btn">
+      <span class="burger-btn__line"></span>
+    </div>
+ 
+    <div class="burger-menu burger-menu--font-size none">
+      <button class="btn burger-menu__btn">Contact sales</button>
+      <nav class="nav">
+        <ul class="nav-list nav-list--burger-column">
+          <li>
+            <a href="#!">For Business</a>
+          </li>
+          <li>
+            <a href="#!">For Customers</a>
+          </li>
+          <li>
+            <a href="#!">Privacy Policy</a>
+          </li>
+          <li>
+            <a href="#!">Terms Of Use - Seller</a>
+          </li>
+          <li>
+            <a href="#!">Terms of Use - Sellers & Customers</a>
+          </li>
+        </ul>
+      </nav>
     </div>
 
+    </div>
+
+    
+
     <!-- FORM -->
-    <form class="form">
+    <form class="form none">
       <div class="form__wrap form-name">
         <p class="form__text form-name__text">Name</p>
         <input type="text" class="form__input form__input--name border-red" placeholder="Enter name">
@@ -49,7 +80,7 @@
       </div>
       <div class="form__wrap form-number">
         <p class="form__text form__text--number">Phone number</p>
-        <input inputmode="" type="text" class="form__input form__input--number" placeholder="+1 900 000 00 00 ">
+        <input type="text" class="form__input form__input--number" placeholder="+1 900 000 00 00 ">
         <p class="form__text form__text--red">This field is required.</p>
       </div>
       <div class="form__wrap form-company">
@@ -124,7 +155,6 @@
               <img class="about-decorative__lollipop2" src="img/lollipop2.svg" alt="lollipop">
             </div>
           </div>
-
           <div class="about__cards">
             <div class="about-card">
               <img src="img/star.svg" alt="star" class="about-card__img">
@@ -214,7 +244,7 @@
           <div class="statistics-item">
             <h3 class="statistics-item__title">15%</h3>
             <p class="statistics-item__text">
-              Increase 
+              Increase
               in Purchase Amount
             </p>
           </div>
@@ -362,7 +392,6 @@
             <li class="nav-list__link nav-list__link--short">
               <a href="#!">For Customers</a>
             </li>
-
             <li class="nav-list__link nav-list__link--short nav-list__link--none">
               <a href="#!">Privacy Policy</a>
             </li>
@@ -372,8 +401,6 @@
             <li class="nav-list__link nav-list__link--short nav-list__link--none">
               <a href="#!">Terms of Use - Sellers & Customers</a>
             </li>
-
-
           </ul>
         </nav>
         <button class="btn btn--margin">Contact sales</button>

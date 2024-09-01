@@ -1,6 +1,6 @@
 /* BURGER BTN */
 .burger-btn {
-    display: flex;
+    display: none;
     position: fixed;
     top: 50px;
     right: 30px;
@@ -37,7 +37,7 @@
 }
 
 /* обращение к равнозначному классу .active */
-.burger-btn.active span {
+.burger-btn.active .burger-btn__line {
     transform: scale(0);
 }
 

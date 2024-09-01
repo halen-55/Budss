@@ -27,7 +27,7 @@
 }
 
 .form__input--number {
-    background-image: url(../../img/icon/united-states-of-america.png);
+    background-image: url(../../img/Flags/russian-federation.png);
     background-repeat: no-repeat;
     background-position: 15px 10px;
     padding-left: 45px;
@@ -62,7 +62,7 @@
 
 .input::placeholder {
     font-family: "Outfit-Regular";
-    color: #A7A7A7;
+    color: var(--light-grey-form);
 }
 
 .text-agree {

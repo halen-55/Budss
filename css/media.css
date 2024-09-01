@@ -11,8 +11,16 @@
 }
 
 @media (max-width: 1220px) {
+    /* COOKIE */
     .cookie {
-        display: none !important;
+        padding: 20px 45px 20px 20px;
+    }
+    .cookie__text {
+        margin-right: 20px;
+    }
+
+    .cookie__buttons {
+        flex-direction: column; 
     }
 
     /* TITLE block */
@@ -29,11 +37,7 @@
     .header__bottom {
         margin: 15px;
     }
-
-    .btn--mobile-none {
-        display: none !important;
-    }
-
+ 
     /* HERO */
     .hero {
         align-items: flex-end;
@@ -109,6 +113,15 @@
 }
 
 @media (max-width: 970px) {
+
+    /* HEADER */
+    .btn--mobile-none {
+        display: none !important;
+    }
+    
+    .burger-btn {
+        display: flex;
+    }
 
     /* NAV block*/
     .nav--padding {
@@ -416,5 +429,14 @@
 }
 
 @media (max-width: 768px) {
-    
+  /* COOKIE */
+  .cookie {
+    flex-direction: column;
+    padding: 20px;
+}
+
+.cookie__text {
+    margin-bottom: 40px;
+}
+
 }

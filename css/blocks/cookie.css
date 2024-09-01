@@ -1,15 +1,16 @@
 .cookie {
-    width: 1285px;
+    max-width: 1285px;
+    width: 92%;
     border-radius: 16px;
     background-color: var(--white);
     display: flex;
     justify-content: space-around;
     padding: 30px 60px 30px 30px;
-    position: fixed;
     margin: 0 auto;
-    bottom: 0;
-    transform: translate(-50%, -25%);
-    left: 50%;
+    position: fixed;
+    bottom: 20px;
+    left: 16px;
+    right: 16px;
     z-index: 100;
 }
 
@@ -19,21 +20,13 @@
     font-family: "Outfit-Light";
     font-size: 20px;
     line-height: 140%;
-    margin: 0;
+    margin-right: 140px;
 }
 
 .cookie__buttons {
     display: flex;
     justify-content: space-around;
     gap: 20px;
-}
-
-.btn-close {
-    position: absolute;
-    color: var(--light-grey);
-    font-size: 30px;
-    top: 0px;
-    right: 10px;
 }
 
 

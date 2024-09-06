@@ -7,8 +7,13 @@
   border-radius: 16px;
 }
 
-.btn--disabled {
+.disabled {
   background-color: var(--light-grey);
+  pointer-events: none;
+}
+
+.btn--short {
+  max-width: 60%;
 }
 
 .btn:hover {

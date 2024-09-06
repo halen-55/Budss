@@ -31,96 +31,99 @@
           <img class="logo__img sticky" src="img/logo/logo.svg" alt="Budss">
           <p class="logo__text">budss</p>
         </a>
-        <button class="btn btn--mobile-none">Contact sales</button>
-      </div>
-     
+        <button class="btn btn--contact-sales btn--mobile-none">Contact sales</button>
+      
+
       <!-- BURGER -->
-    <div class="burger-btn">
-      <span class="burger-btn__line"></span>
+      <div class="burger-btn">
+        <span class="burger-btn__line"></span>
+      </div>
+      <div class="burger-menu burger-menu--font-size none">
+        <button class="btn btn--contact-sales burger-menu__btn">Contact sales</button>
+        <nav class="nav">
+          <ul class="nav-list nav-list--burger-column">
+            <li>
+              <a href="#!">For Business</a>
+            </li>
+            <li>
+              <a href="#!">For Customers</a>
+            </li>
+            <li>
+              <a href="#!">Privacy Policy</a>
+            </li>
+            <li>
+              <a href="#!">Terms Of Use - Seller</a>
+            </li>
+            <li>
+              <a href="#!">Terms of Use - Sellers & Customers</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </div>
-     <div class="burger-menu burger-menu--font-size none">
-      <button class="btn burger-menu__btn">Contact sales</button>
-      <nav class="nav">
-        <ul class="nav-list nav-list--burger-column">
-          <li>
-            <a href="#!">For Business</a>
-          </li>
-          <li>
-            <a href="#!">For Customers</a>
-          </li>
-          <li>
-            <a href="#!">Privacy Policy</a>
-          </li>
-          <li>
-            <a href="#!">Terms Of Use - Seller</a>
-          </li>
-          <li>
-            <a href="#!">Terms of Use - Sellers & Customers</a>
-          </li>
-        </ul>
-      </nav>
     </div>
 
-    
-
-
-    </div>
-  
     <!-- FORM -->
     <form class="form none">
-      <div class="form__wrap form-name">
-        <p class="form__text form-name__text">Name</p>
-        <input type="text" class="form__input form__input--name border-red" placeholder="Enter name">
-        <p class="form__text form__text--red">This field is required.</p>
+      <div class="button-close button-close--form">
+        <img src="img/button-close.svg" alt="">
       </div>
-      <div class="form__wrap form-email">
-        <p class="form__text form__text--email">Email</p>
-        <input type="text" class="form__input form__input--email" placeholder="Enter email">
-        <p class="form__text form__text--red">This field is required.</p>
+      <div class="form__wrap">
+        <label class="form__text" for="name">Name <span class="text-red">*</span></label>
+        <input id="name" type="text" class="form__input" placeholder="Enter name">
+        <p id="error" class="form__text error-name text-red"></p>
       </div>
-      <div class="form__wrap form-number">
-        <p class="form__text form__text--number">Phone number</p>
-        <input type="text" class="form__input form__input--number" placeholder="+1 900 000 00 00 ">
-        <p class="form__text form__text--red">This field is required.</p>
+      <div class="form__wrap">
+        <label class="form__text" for="email">Email <span class="text-red">*</span></label>
+        <input id="email" type="text" class="form__input" placeholder="Enter email">
+        <p class="form__text error-email text-red"></p>
       </div>
-      <div class="form__wrap form-company">
-        <p class="form__text form__text--company">Company</p>
-        <input type="text" class="form__input form__input--company" placeholder="Enter company">
+      <div class="form__wrap">
+        <label class="form__text" for="number">Phone number <span class="text-red">*</span></label>
+        <input onkeyup="this.value = this.value.replace(/[^\d]/g,'');" 
+        id="number" type="tel" class="form__input form__input--number" placeholder="900 000 00 00 ">
+        <p class="form__text form__text--plus">+7</p>
+        <p class="form__text error-number text-red"></p>
       </div>
-      <div class="form__wrap form-website">
-        <p class="form__text form__text--website">Website/Store URL</p>
-        <input type="text" class="form__input form__input--website" placeholder="Enter Website/Store URL">
+      <div class="form__wrap">
+        <label class="form__text" for="company">Company</label>
+        <input id="company" type="text" class="form__input" placeholder="Enter company">
       </div>
-      <p class="form__text-fill form__text-fill--red">Please fill in all required fields</p>
+      <div class="form__wrap">
+        <label class="form__text" for="website">Website/Store URL</label>
+        <input id="website" type="text" class="form__input" placeholder="Enter Website/Store URL">
+      </div>
+      <p class="form__text-fill form__text-fill--red"></p>
       <p class="text-agree">By submitting this form you are agreeing to Budss’s
         <a class="text-agree__link" href="#!">Privacy Policy</a> and
         <a class="text-agree__link" href="#!">Terms of Use</a>
       </p>
-      <button class="btn btn--disabled">Contact sales</button>
+      <button  id="submit" class="btn btn--short disabled">Contact sales</button>
     </form>
 
     <!-- SUCCESS -->
     <div class="success none">
+      <div class="button-close button-close--success">
+        <img src="img/button-close.svg" alt="">
+      </div>
       <img src="img/blob4.svg" alt="blob" class="success__img">
       <h3 class="success__title">Thank you!</h3>
       <p class="success__text">Thank you, we have received your application and will contact you soon!</p>
       <button class="btn success__btn">Super!</button>
-    </div>
+    </div> 
 
     <!-- COOCKIE -->
-    
-    <div class="cookie">
+    <div class="cookie none">
       <p class="cookie__text">This website uses cookies to ensure you get the best experience on our website. They also
         allow us to analyze user behavior in order to constantly improve the website for you.</p>
       <div class="cookie__buttons">
         <button class="btn btn-accept">Accept</button>
         <button class="btn btn-decline btn-white">Decline</button>
       </div>
-      <div class="btn-close">
+      <div class="button-close button-close--cookie">
         <img src="img/button-close.svg" alt="">
       </div>
     </div>
-
 
   </header>
 
@@ -136,7 +139,7 @@
             Budss is a payments as a service and WOM engine dedicated to
             acquisition and retention of customers to your business.
           </p>
-          <button class="btn hero-left__btn">Contact sales</button>
+          <button class="btn btn--contact-sales hero-left__btn">Contact sales</button>
         </div>
         <div class="hero-right">
           <img class="hero-right__gerl" src="img/gerl.png" alt="gerl">
@@ -335,7 +338,7 @@
           <h2 class="brand-grow__title title-medium">
             Let Your Business Grow
           </h2>
-          <button class="btn brand-grow__btn">Contact sales</button>
+          <button class="btn btn--contact-sales brand-grow__btn">Contact sales</button>
         </div>
         <div class="brand-social">
           <div class="brand-social__wrapper">
@@ -407,7 +410,7 @@
             </li>
           </ul>
         </nav>
-        <button class="btn btn--margin">Contact sales</button>
+        <button class="btn btn--contact-sales btn--margin">Contact sales</button>
         <div class="download download--column">
           <a href="#!">
             <img src="img/logo/appstore.png" alt="appstore">
@@ -427,7 +430,7 @@
       </div>
     </div>
   </footer>
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 
 </html>

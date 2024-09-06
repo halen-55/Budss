@@ -1,7 +1,6 @@
 /* HEADER */
-
 .header {
-  margin-bottom: 60px;
+  margin-bottom: 82px;
   height: 100%;
 }
 
@@ -10,16 +9,20 @@
 }
 
 .header__bottom {
-  max-height: 71px;
-  margin: 11px 60px;
+  position: relative;
+  padding: 7px 60px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 
-.sticky {
-  position: sticky;
-  position: -webkit-sticky;
-	top: 0;
-	align-self: flex-start;
+.fixed {
+  max-width: 1440px;
+  background-color: var(--dark-brown);
+  position: fixed;
+  margin: 0 auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
 }

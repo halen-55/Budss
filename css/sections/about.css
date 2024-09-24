@@ -11,6 +11,7 @@
 .about-wrapper {
   display: flex;
   gap: 118px;
+  margin-bottom: 36px;
 }
 
 .about__text {
@@ -39,7 +40,7 @@
 
 /* .about-decorative {
     position: relative;
-    
+  
 } */
 
 .about-decorative__lollipop1 {

@@ -24,6 +24,10 @@
   color: var(--black);
 }
 
+.list-link--font-black:link {
+  color: var(--black);
+}
+
 .list-link--font-black:visited {
   color: var(--black);
 }
